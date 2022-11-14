@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oJ9Qkwa60TM1bqv+Jae7TXaC0G9AXZRV23jAOBZ84ZAGRqtCEDT27ikQGVZ1fXzeFrIxx3GZvHSc4YlaPUCWgA==",
+  "dgSpecHash": "yfWvawdJPX6jrPQ1pm2K+yFrMsPibaJugJdjHt+qEKeiDcitdtLkMD6gKsWfPHMDyCKVzI1YC/NTRxEq2brXwA==",
   "success": true,
-  "projectFilePath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/assignment2backend.csproj",
+  "projectFilePath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/EF.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

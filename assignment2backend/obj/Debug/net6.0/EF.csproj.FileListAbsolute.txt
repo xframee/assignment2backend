@@ -1,0 +1,15 @@
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/bin/Debug/net6.0/assignment2backend
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/bin/Debug/net6.0/assignment2backend.deps.json
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/bin/Debug/net6.0/assignment2backend.runtimeconfig.json
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/bin/Debug/net6.0/assignment2backend.dll
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/bin/Debug/net6.0/assignment2backend.pdb
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/EF.csproj.AssemblyReference.cache
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/EF.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/EF.AssemblyInfoInputs.cache
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/EF.AssemblyInfo.cs
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/EF.csproj.CoreCompileInputs.cache
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/assignment2backend.dll
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/refint/assignment2backend.dll
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/assignment2backend.pdb
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/EF.genruntimeconfig.cache
+/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/Debug/net6.0/ref/assignment2backend.dll

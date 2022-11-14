@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/assignment2backend.csproj",
-      "projectName": "assignment2backend",
-      "projectPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/assignment2backend.csproj",
+      "projectUniqueName": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/EF.csproj",
+      "projectName": "EF",
+      "projectPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/EF.csproj",
       "packagesPath": "/Users/alexanderchristensen/.nuget/packages/",
       "outputPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/obj/",
       "projectStyle": "PackageReference",
