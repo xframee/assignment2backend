@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "yfWvawdJPX6jrPQ1pm2K+yFrMsPibaJugJdjHt+qEKeiDcitdtLkMD6gKsWfPHMDyCKVzI1YC/NTRxEq2brXwA==",
+  "dgSpecHash": "JE7br0HjqMkj2+dknFpl9NHWuXDfc+Oi0Cg/MwAwqGVGYlIuzxmSITgakQsyM/T/KWRaL/5hlAYpXTtq+YamjA==",
   "success": true,
   "projectFilePath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/assignment2backend/EF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.entityframeworkcore/7.0.0/microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0/microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.0/microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.0/microsoft.entityframeworkcore.relational.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/npgsql/7.0.0/npgsql.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.0/npgsql.entityframeworkcore.postgresql.7.0.0.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
