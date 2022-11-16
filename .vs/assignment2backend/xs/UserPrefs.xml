@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{A1801F07-7F41-469D-89F1-7E90268C7090}|Default">
+﻿<Properties StartupConfiguration="{701B0CBB-8CF1-4AF1-8F60-915E571720E4}|Default">
+  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.EF PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace EF
+namespace DataLayer.Model
 {
     public class ShowInfo
     {

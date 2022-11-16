@@ -1,13 +1,15 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using DataLayer.Model;
 
-namespace EF
+namespace DataLayer
 {
     public class NorthwindContext : DbContext
     {
         const string connectionString = "host=localhost;db=imdb;uid=postgres;pwd=paranormalA1";
 
         public DbSet<ShowInfo> ShowInfos { get; set; }
+        public DbSet<Genre> Genres { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -29,6 +31,10 @@ namespace EF
             modelBuilder.Entity<ShowInfo>().Property(x => x.StartYear).HasColumnName("startyear");
             modelBuilder.Entity<ShowInfo>().Property(x => x.EndYear).HasColumnName("endyear");
             modelBuilder.Entity<ShowInfo>().Property(x => x.RunTime).HasColumnName("runtimeminutes");
+
+            modelBuilder.Entity<Genre>().ToTable("genres");
+            modelBuilder.Entity<Genre>().Property(x => x.TConst).HasColumnName("tconst");
+            modelBuilder.Entity<Genre>().Property(x => x.MovieGenre).HasColumnName("genre");
         }
     }
 }

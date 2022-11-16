@@ -3,7 +3,7 @@ using EF;
 
 using var db = new NorthwindContext();
 
-foreach (var info in db.ShowInfos)
+foreach (var genre in db.Genres)
 {
-    Console.WriteLine(info.TConst);
+    Console.WriteLine(genre.Genre);
 }
