@@ -10,6 +10,8 @@ namespace DataLayer
 
         public DbSet<ShowInfo> ShowInfos { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<ActorRating> ActorRatings { get; set; }
+        public DbSet<Character> Characters { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -35,6 +37,15 @@ namespace DataLayer
             modelBuilder.Entity<Genre>().ToTable("genres");
             modelBuilder.Entity<Genre>().Property(x => x.TConst).HasColumnName("tconst");
             modelBuilder.Entity<Genre>().Property(x => x.MovieGenre).HasColumnName("genre");
+
+            modelBuilder.Entity<ActorRating>().ToTable("actor_rating");
+            modelBuilder.Entity<ActorRating>().Property(x => x.NConst).HasColumnName("nconst");
+            modelBuilder.Entity<ActorRating>().Property(x => x.Rating).HasColumnName("rating");
+
+            modelBuilder.Entity<Character>().ToTable("characters").HasNoKey();
+            modelBuilder.Entity<Character>().Property(x => x.TConst).HasColumnName("tconst");
+            modelBuilder.Entity<Character>().Property(x => x.NConst).HasColumnName("nconst");
+            modelBuilder.Entity<Character>().Property(x => x.CharacterPlayed).HasColumnName("character");
         }
     }
 }

@@ -12,11 +12,25 @@ public class DataService
         return db.ShowInfos.ToList();
     }
 
-    public IList<Genre> GetGenresTest()
+    public IList<Genre> GetGenres()
     {
         using var db = new NorthwindContext();
 
         return db.Genres.ToList();
+    }
+
+    public IList<ActorRating> GetActorRatings()
+    {
+        using var db = new NorthwindContext();
+
+        return db.ActorRatings.ToList();
+    }
+
+    public IList<Character> GetCharacters()
+    {
+        using var db = new NorthwindContext();
+
+        return db.Characters.ToList();
     }
 }
 

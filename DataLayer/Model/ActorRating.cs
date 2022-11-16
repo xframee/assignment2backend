@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DataLayer.Model
 {
-    public class Genre
+    public class ActorRating
     {
         [Key]
-        public string TConst { get; set; }
-        public string MovieGenre { get; set; }
+        public string NConst { get; set; }
+        public decimal Rating { get; set; }
     }
 }
 

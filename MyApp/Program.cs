@@ -12,11 +12,29 @@ foreach (var info in showinfos)
     Console.WriteLine(info.PrimaryTitle);
 }
 
-*/
 
-var genrestest = ds.GetGenresTest();
+var genres = ds.GetGenres();
 
-foreach (var genre in genrestest)
+foreach (var genre in genres)
 {
     Console.WriteLine($"Tconst: {genre.TConst}, Genre: {genre.MovieGenre} ");
 }
+
+
+var actorRatings = ds.GetActorRatings();
+
+foreach (var rating in actorRatings)
+{
+    Console.WriteLine($"Nconst: {rating.NConst}, Rating: {rating.Rating}");
+}
+
+
+
+var characters = ds.GetCharacters();
+foreach (var character in characters)
+{
+    Console.WriteLine(character.CharacterPlayed);
+}
+
+*/
+
