@@ -32,5 +32,39 @@ public class DataService
 
         return db.Characters.ToList();
     }
-}
 
+    public IList<Director> GetDirectors()
+    {
+        using var db = new NorthwindContext();
+
+        return db.Directors.ToList();
+    }
+
+    public IList<EpisodeInfo> GetEpisodeInfos()
+    {
+        using var db = new NorthwindContext();
+
+        return db.EpisodeInfos.ToList();
+    }
+
+    public IList<KnownFor> GetKnownFors()
+    {
+        using var db = new NorthwindContext();
+
+        return db.KnownFors.ToList();
+    }
+
+    public IList<OMDBData> GetOMDBDatas()
+    {
+        using var db = new NorthwindContext();
+
+        return db.OMDBDatas.ToList();
+    }
+
+    public IList<Person> GetPeople()
+    {
+        using var db = new NorthwindContext();
+
+        return db.People.ToList();
+    }
+}

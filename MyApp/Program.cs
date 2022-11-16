@@ -36,5 +36,43 @@ foreach (var character in characters)
     Console.WriteLine(character.CharacterPlayed);
 }
 
+
+
+var directors = ds.GetDirectors();
+
+foreach (var director in directors)
+{
+    Console.WriteLine(director.NConst);
+}
+
+
+
+var episodeInfos = ds.GetEpisodeInfos();
+
+foreach (var info in episodeInfos)
+{
+    Console.WriteLine(info.TConst);
+}
+
+
+var knownfors = ds.GetKnownFors();
+
+foreach (var knownfor in knownfors)
+{
+    Console.WriteLine(knownfor.NConst);
+}
+
+var omdbdatas = ds.GetOMDBDatas();
+
+foreach (var omdbdata in omdbdatas)
+{
+    Console.WriteLine(omdbdata.Plot);
+}
 */
 
+var people = ds.GetPeople();
+
+foreach (var person in people)
+{
+    Console.WriteLine(person.Name);
+}
