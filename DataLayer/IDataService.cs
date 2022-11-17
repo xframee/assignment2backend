@@ -7,7 +7,10 @@ namespace DataLayer
     public interface IDataService
     {
         IList<ShowInfo> GetShowInfos();
-        IList<ShowInfo> GetShowInfo(string tconst);
+        ShowInfo? GetShowInfo(string tconst);
+        void CreateShowInfo(ShowInfo showinfo);
+        bool DeleteShowInfo(string tconst);
+        bool UpdateShowInfo(ShowInfo showinfo);
         IList<Genre> GetGenres();
         IList<ActorRating> GetActorRatings();
         IList<Character> GetCharacters();

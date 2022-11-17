@@ -15,13 +15,43 @@ public class DataService : IDataService
         return db.ShowInfos.ToList();
     }
 
-    public IList<ShowInfo> GetShowInfo(string tconst)
+    public ShowInfo? GetShowInfo(string tconst)
     {
         using var db = new NorthwindContext();
 
-        return db.ShowInfos
-            .Where(x => x.TConst.Equals(tconst))
-            .ToList();
+        return db.ShowInfos.Find(tconst);
+    }
+
+    public void CreateShowInfo(ShowInfo showinfo)
+    {
+        using var db = new NorthwindContext();
+        showinfo.TConst = db.ShowInfos.Any() ? db.ShowInfos.Max(x => x.TConst) + 1 : "tt0052520"; //det her virker ikke som det skal
+        db.ShowInfos.Add(showinfo);
+        db.SaveChanges();
+    }
+
+    public bool DeleteShowInfo (string tconst)
+    {
+        using var db = new NorthwindContext();
+        var showInfo = db.ShowInfos.Find(tconst);
+        db.ShowInfos.Remove(showInfo);
+        return db.SaveChanges() > 0;
+    }
+
+    public bool UpdateShowInfo(ShowInfo showinfo)
+    {
+        using var db = new NorthwindContext();
+        var dbShowInfo = db.ShowInfos.Find(showinfo.TConst);
+        if (dbShowInfo == null) return false;
+        dbShowInfo.Type = showinfo.Type;
+        dbShowInfo.PrimaryTitle = showinfo.PrimaryTitle;
+        dbShowInfo.OriginalTitle = showinfo.OriginalTitle;
+        dbShowInfo.IsAdult = showinfo.IsAdult;
+        dbShowInfo.StartYear = showinfo.StartYear;
+        dbShowInfo.EndYear = showinfo.EndYear;
+        dbShowInfo.RunTime = showinfo.RunTime;
+        db.SaveChanges();
+        return true;
     }
 
     public IList<Genre> GetGenres()
