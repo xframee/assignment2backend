@@ -1,4 +1,7 @@
 ﻿using DataLayer.Model;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
+
 
 namespace DataLayer;
 
@@ -10,6 +13,15 @@ public class DataService
         using var db = new NorthwindContext();
 
         return db.ShowInfos.ToList();
+    }
+
+    public IList<ShowInfo> GetShowInfo(string tconst)
+    {
+        using var db = new NorthwindContext();
+
+        return db.ShowInfos
+            .Where(x => x.TConst.Equals(tconst))
+            .ToList();
     }
 
     public IList<Genre> GetGenres()

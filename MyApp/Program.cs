@@ -152,4 +152,13 @@ foreach (var writer in Writers)
 {
     Console.WriteLine(writer.TConst);
 }
+
+
+var test = ds.GetShowInfo("tt12508898");
+
+foreach (var item in test)
+{
+    Console.WriteLine(item.TConst);
+}
+
 */
