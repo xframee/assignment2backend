@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 
 namespace DataLayer;
 
-public class DataService
+public class DataService : IDataService
 {
 
     public IList<ShowInfo> GetShowInfos()

@@ -10,3 +10,15 @@
 /Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/obj/Debug/net6.0/refint/DataLayer.dll
 /Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.pdb
 /Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/obj/Debug/net6.0/ref/DataLayer.dll
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/bin/Debug/net6.0/DataLayer.deps.json
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/bin/Debug/net6.0/DataLayer.dll
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/bin/Debug/net6.0/DataLayer.pdb
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.csproj.AssemblyReference.cache
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.AssemblyInfoInputs.cache
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.AssemblyInfo.cs
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.csproj.CoreCompileInputs.cache
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.dll
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/refint/DataLayer.dll
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/DataLayer.pdb
+/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/Debug/net6.0/ref/DataLayer.dll

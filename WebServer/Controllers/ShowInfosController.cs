@@ -1,15 +1,21 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using DataLayer;
 namespace WebServer.Controllers
 {
     [Route("api/showInfos")]
     public class ShowInfosController : ControllerBase
     {
+
+        private IDataService _dataService = new DataService();
+
         [HttpGet]
-        public string Get()
+        public JsonResult Get()
         {
-            return "Hello from controller";
+
+            var showInfos = _dataService.GetShowInfos();
+            return new JsonResult(showInfos);
         }
     }
-}
 
+}
