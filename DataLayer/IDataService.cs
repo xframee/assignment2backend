@@ -23,8 +23,6 @@ namespace DataLayer
         IList<ShowRating> GetShowRatings();
         IList<UserBookmark> GetUserBookmarks();
         IList<UserRating> GetUserRatings();
-        IList<User> GetUsers();
-        IList<Wi> GetWis();
         IList<Writer> GetWriters();
     }
 }

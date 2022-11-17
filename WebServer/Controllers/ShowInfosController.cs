@@ -10,11 +10,23 @@ namespace WebServer.Controllers
         private IDataService _dataService = new DataService();
 
         [HttpGet]
-        public JsonResult Get()
+        public IActionResult Get()
         {
-
             var showInfos = _dataService.GetShowInfos();
-            return new JsonResult(showInfos);
+            return Ok(showInfos);
+        }
+
+        [HttpGet("{tconst}")]
+        public IActionResult GetShowInfo(string tconst)
+        {
+            var showInfo = _dataService.GetShowInfo(tconst);
+
+            if (showInfo == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(showInfo);
         }
     }
 
