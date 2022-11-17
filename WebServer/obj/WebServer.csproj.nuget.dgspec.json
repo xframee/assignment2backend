@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/WebServer.csproj": {}
+    "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/WebServer.csproj": {}
   },
   "projects": {
-    "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/WebServer.csproj": {
+    "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/WebServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/WebServer.csproj",
+        "projectUniqueName": "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/WebServer.csproj",
         "projectName": "WebServer",
-        "projectPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/WebServer.csproj",
-        "packagesPath": "/Users/alexanderchristensen/.nuget/packages/",
-        "outputPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/obj/",
+        "projectPath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/WebServer.csproj",
+        "packagesPath": "/Users/alissahansen/.nuget/packages/",
+        "outputPath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/alexanderchristensen/.nuget/NuGet/NuGet.Config"
+          "/Users/alissahansen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
