@@ -675,32 +675,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/alissahansen/.nuget/packages/": {}
+    "/Users/alexanderchristensen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/WebServer.csproj",
+      "projectUniqueName": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/WebServer.csproj",
       "projectName": "WebServer",
-      "projectPath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/WebServer.csproj",
-      "packagesPath": "/Users/alissahansen/.nuget/packages/",
-      "outputPath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/",
+      "projectPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/WebServer.csproj",
+      "packagesPath": "/Users/alexanderchristensen/.nuget/packages/",
+      "outputPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/WebServer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/alissahansen/.nuget/NuGet/NuGet.Config"
+        "/Users/alexanderchristensen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/DataLayer.csproj": {
-              "projectPath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/DataLayer.csproj"
+            "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/DataLayer.csproj": {
+              "projectPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/DataLayer.csproj"
             }
           }
         }
