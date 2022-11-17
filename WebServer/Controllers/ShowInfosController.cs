@@ -42,6 +42,19 @@ namespace WebServer.Controllers
             return Ok(model);
         }
 
+        [HttpDelete("{tconst}")]
+        public IActionResult DeleteShowInfo(string tconst)
+        {
+            var deleted = _dataService.DeleteShowInfo(tconst);
+
+            if (!deleted)
+            {
+                return NotFound();
+            }
+
+            return Ok();
+        }
+
         private ShowInfoModel CreateShowInfoModel(ShowInfo showInfo)
         {
             var model = new ShowInfoModel
