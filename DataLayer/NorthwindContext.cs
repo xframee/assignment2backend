@@ -6,7 +6,9 @@ namespace DataLayer
 {
     public class NorthwindContext : DbContext
     {
-        const string connectionString = "host=localhost;db=imdb;uid=postgres;pwd=paranormalA1";
+        // const string connectionString = "host=localhost;db=imdb;uid=postgres;pwd=paranormalA1";
+
+        const string connectionString = "host=localhost; db=imdb; uid=postgres; pwd=chili321";
 
         public DbSet<ShowInfo> ShowInfos { get; set; }
         public DbSet<Genre> Genres { get; set; }
@@ -44,7 +46,7 @@ namespace DataLayer
             modelBuilder.Entity<ShowInfo>().Property(x => x.Type).HasColumnName("titletype");
             modelBuilder.Entity<ShowInfo>().Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
             modelBuilder.Entity<ShowInfo>().Property(x => x.OriginalTitle).HasColumnName("originaltitle");
-            modelBuilder.Entity<ShowInfo>().Property(x => x.IsAduldt).HasColumnName("isadult");
+            modelBuilder.Entity<ShowInfo>().Property(x => x.IsAdult).HasColumnName("isadult");
             modelBuilder.Entity<ShowInfo>().Property(x => x.StartYear).HasColumnName("startyear");
             modelBuilder.Entity<ShowInfo>().Property(x => x.EndYear).HasColumnName("endyear");
             modelBuilder.Entity<ShowInfo>().Property(x => x.RunTime).HasColumnName("runtimeminutes");

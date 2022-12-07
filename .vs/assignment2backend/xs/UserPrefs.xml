@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{C3D53BBF-0B6D-4985-9969-7EAF8B1E8708}|Default">
-  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataLayer/NorthwindContext.cs">
+  <MonoDevelop.Ide.ItemProperties.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataLayer/Model/RecentlyVisited.cs">
     <Files>
       <File FileName="DataLayer/Model/RecentlyVisited.cs" Line="5" Column="2" />
-      <File FileName="assignment2backend/NorthwindContext.cs" Line="13" Column="61" />
-      <File FileName="DataLayer/Class1.cs" Line="6" Column="21" />
       <File FileName="MyApp/Program.cs" Line="165" Column="1" />
       <File FileName="WebServer/Program.cs" Line="8" Column="1" />
       <File FileName="WebServer/Properties/launchSettings.json" Line="13" Column="47" />
@@ -16,7 +12,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="assignment2backend" expanded="True">
-            <Node name="DataLayer" expanded="True" />
+            <Node name="DataLayer" expanded="True">
+              <Node name="Model" expanded="True" />
+            </Node>
             <Node name="MyApp" expanded="True" />
             <Node name="WebServer" expanded="True">
               <Node name="Properties" expanded="True" />
@@ -29,8 +27,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
