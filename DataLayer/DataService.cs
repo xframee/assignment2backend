@@ -12,28 +12,30 @@ public class DataService : IDataService
     {
         using var db = new NorthwindContext();
 
-        return db.ShowInfos.ToList();
+        return db.ShowInfos
+            .Take(50)
+            .ToList();
     }
 
-    public ShowInfo? GetShowInfo(string tconst)
+    public ShowInfo? GetShowInfo(string showInfoId)
     {
         using var db = new NorthwindContext();
 
-        return db.ShowInfos.Find(tconst);
+        return db.ShowInfos.Find(showInfoId);
     }
 
     public void CreateShowInfo(ShowInfo showinfo)
     {
         using var db = new NorthwindContext();
-        showinfo.TConst = db.ShowInfos.Any() ? db.ShowInfos.Max(x => x.TConst) + 1 : "tt0052520"; //det her virker ikke som det skal
+        showinfo.ShowInfoId = db.ShowInfos.Any() ? db.ShowInfos.Max(x => x.ShowInfoId) + 1 : "tt0052520"; //det her virker ikke som det skal
         db.ShowInfos.Add(showinfo);
         db.SaveChanges();
     }
 
-    public bool DeleteShowInfo (string tconst)
+    public bool DeleteShowInfo (string showInfoId)
     {
         using var db = new NorthwindContext();
-        var showInfo = db.ShowInfos.Find(tconst);
+        var showInfo = db.ShowInfos.Find(showInfoId);
         db.ShowInfos.Remove(showInfo);
         return db.SaveChanges() > 0;
     }
@@ -41,7 +43,7 @@ public class DataService : IDataService
     public bool UpdateShowInfo(ShowInfo showinfo)
     {
         using var db = new NorthwindContext();
-        var dbShowInfo = db.ShowInfos.Find(showinfo.TConst);
+        var dbShowInfo = db.ShowInfos.Find(showinfo.ShowInfoId);
         if (dbShowInfo == null) return false;
         dbShowInfo.Type = showinfo.Type;
         dbShowInfo.PrimaryTitle = showinfo.PrimaryTitle;

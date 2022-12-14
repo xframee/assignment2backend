@@ -8,6 +8,8 @@ namespace DataLayer.Model
         [Key]
         public string TConst { get; set; }
         public string MovieGenre { get; set; }
+
+         
     }
 }
 

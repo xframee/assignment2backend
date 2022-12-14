@@ -42,7 +42,7 @@ namespace DataLayer
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<ShowInfo>().ToTable("show_info");
-            modelBuilder.Entity<ShowInfo>().Property(x => x.TConst).HasColumnName("tconst");
+            modelBuilder.Entity<ShowInfo>().Property(x => x.ShowInfoId).HasColumnName("tconst");
             modelBuilder.Entity<ShowInfo>().Property(x => x.Type).HasColumnName("titletype");
             modelBuilder.Entity<ShowInfo>().Property(x => x.PrimaryTitle).HasColumnName("primarytitle");
             modelBuilder.Entity<ShowInfo>().Property(x => x.OriginalTitle).HasColumnName("originaltitle");
@@ -50,6 +50,7 @@ namespace DataLayer
             modelBuilder.Entity<ShowInfo>().Property(x => x.StartYear).HasColumnName("startyear");
             modelBuilder.Entity<ShowInfo>().Property(x => x.EndYear).HasColumnName("endyear");
             modelBuilder.Entity<ShowInfo>().Property(x => x.RunTime).HasColumnName("runtimeminutes");
+            modelBuilder.Entity<ShowInfo>().Property(x => x.Poster).HasColumnName("poster");
 
             modelBuilder.Entity<Genre>().ToTable("genres");
             modelBuilder.Entity<Genre>().Property(x => x.TConst).HasColumnName("tconst");
@@ -79,8 +80,7 @@ namespace DataLayer
             modelBuilder.Entity<KnownFor>().Property(x => x.Titles).HasColumnName("knowfortitles");
 
             modelBuilder.Entity<OMDBData>().ToTable("omdb_data");
-            modelBuilder.Entity<OMDBData>().Property(x => x.TConst).HasColumnName("tconst");
-            modelBuilder.Entity<OMDBData>().Property(x => x.Poster).HasColumnName("poster");
+            modelBuilder.Entity<OMDBData>().Property(x => x.OMDBDataId).HasColumnName("tconst");
             modelBuilder.Entity<OMDBData>().Property(x => x.Plot).HasColumnName("plot");
 
             modelBuilder.Entity<Person>().ToTable("person");

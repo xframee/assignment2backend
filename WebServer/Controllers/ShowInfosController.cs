@@ -26,11 +26,11 @@ namespace WebServer.Controllers
             return Ok(showInfos);
         }
 
-        [HttpGet("{tconst}",Name = nameof(GetShowInfo))]
+        [HttpGet("{ShowInfoId}",Name = nameof(GetShowInfo))]
 
-        public IActionResult GetShowInfo(string tconst)
+        public IActionResult GetShowInfo(string Id)
         {
-            var showInfo = _dataService.GetShowInfo(tconst);
+            var showInfo = _dataService.GetShowInfo(Id);
 
             if (showInfo == null)
             {
@@ -42,10 +42,10 @@ namespace WebServer.Controllers
             return Ok(model);
         }
 
-        [HttpDelete("{tconst}")]
-        public IActionResult DeleteShowInfo(string tconst)
+        [HttpDelete("{ShowInfoId}")] 
+        public IActionResult DeleteShowInfo(string Id)
         {
-            var deleted = _dataService.DeleteShowInfo(tconst);
+            var deleted = _dataService.DeleteShowInfo(Id);
 
             if (!deleted)
             {
@@ -59,14 +59,15 @@ namespace WebServer.Controllers
         {
             var model = new ShowInfoModel
             {
-                Url = _generator.GetUriByName(HttpContext, nameof(GetShowInfo), new { showInfo.TConst }),
+                Url = _generator.GetUriByName(HttpContext, nameof(GetShowInfo), new { showInfo.ShowInfoId}),
                 Type = showInfo.Type,
                 PrimaryTitle = showInfo.PrimaryTitle,
                 OriginalTitle = showInfo.OriginalTitle,
                 IsAdult = showInfo.IsAdult,
                 StartYear = showInfo.StartYear,
                 EndYear = showInfo.EndYear,
-                RunTime = showInfo.RunTime
+                RunTime = showInfo.RunTime,
+                Poster = showInfo.Poster
             };
             return model;
         }
