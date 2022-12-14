@@ -8,6 +8,7 @@ namespace DataLayer
     {
         IList<ShowInfo> GetShowInfos();
         ShowInfo? GetShowInfo(string Id);
+        IList<ShowInfo> GetLimitedShowInfo(int limit);
         void CreateShowInfo(ShowInfo showinfo);
         bool DeleteShowInfo(string Id);
         bool UpdateShowInfo(ShowInfo showinfo);

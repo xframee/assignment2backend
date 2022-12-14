@@ -28,9 +28,9 @@ namespace WebServer.Controllers
 
         [HttpGet("{ShowInfoId}",Name = nameof(GetShowInfo))]
 
-        public IActionResult GetShowInfo(string Id)
+        public IActionResult GetShowInfo(string ShowinfoId)
         {
-            var showInfo = _dataService.GetShowInfo(Id);
+            var showInfo = _dataService.GetShowInfo(ShowinfoId);
 
             if (showInfo == null)
             {
@@ -41,6 +41,21 @@ namespace WebServer.Controllers
 
             return Ok(model);
         }
+
+        /*
+        [HttpGet("{limit}", Name = nameof(GetLimitedShowInfo))]
+
+        public IActionResult GetLimitedShowInfo(int limit)
+        {
+            var showInfos = _dataService.GetLimitedShowInfo(limit);
+
+            if (!showInfos.Any())
+            {
+                return NotFound();
+            }
+            return Ok(showInfos);
+        }
+        */
 
         [HttpDelete("{ShowInfoId}")] 
         public IActionResult DeleteShowInfo(string Id)

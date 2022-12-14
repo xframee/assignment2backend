@@ -12,9 +12,7 @@ public class DataService : IDataService
     {
         using var db = new NorthwindContext();
 
-        return db.ShowInfos
-            .Take(50)
-            .ToList();
+        return db.ShowInfos.ToList();
     }
 
     public ShowInfo? GetShowInfo(string showInfoId)
@@ -22,6 +20,15 @@ public class DataService : IDataService
         using var db = new NorthwindContext();
 
         return db.ShowInfos.Find(showInfoId);
+    }
+
+    public IList<ShowInfo> GetLimitedShowInfo(int limit)
+    {
+        using var db = new NorthwindContext();
+
+        return db.ShowInfos
+            .Take(limit)
+            .ToList();
     }
 
     public void CreateShowInfo(ShowInfo showinfo)
