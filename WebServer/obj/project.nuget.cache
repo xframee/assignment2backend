@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5yiVHhfhDLZUuaO/DfHOQGLpUb4/o/z2Lf0KIFJl8p/E+Avxr/v4lS1QvcpzMT42T+xUFr5bO3sQPVpejlfVpA==",
+  "dgSpecHash": "z0vCE4f5stFM4bFS0jwIrnHehXj5scK9oK76BUFNi1yQ9v4KBgni7EotWqVDIsK+cijq2Flrk0VQ8av3JzjYNg==",
   "success": true,
   "projectFilePath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/WebServer.csproj",
   "expectedPackageFiles": [
+    "/Users/alissahansen/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/alissahansen/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "/Users/alissahansen/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/alissahansen/.nuget/packages/microsoft.entityframeworkcore/7.0.0/microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "/Users/alissahansen/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0/microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
     "/Users/alissahansen/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.0/microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512",

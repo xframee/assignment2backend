@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
 using DataLayer;
 using WebServer.Models;
 using DataLayer.Model;
@@ -7,26 +8,32 @@ using DataLayer.Model;
 namespace WebServer.Controllers
 {
     [Route("api/showInfos")]
+    [ApiController]
+
     public class ShowInfosController : ControllerBase
     {
 
         private IDataService _dataService;
         private readonly LinkGenerator _generator;
+        private readonly IMapper _mapper;
 
-        public ShowInfosController(IDataService dataService, LinkGenerator generator)
+        public ShowInfosController(IDataService dataService, LinkGenerator generator, IMapper mapper)
         {
+
             _dataService = dataService;
-            _generator = generator; 
+            _generator = generator;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public IActionResult GetShowInfos()
         {
-            var showInfos = _dataService.GetShowInfos();
+            var showInfos = _dataService.GetShowInfos().Select(x => CreateShowInfoModel(x));
+
             return Ok(showInfos);
         }
 
-        [HttpGet("{ShowInfoId}",Name = nameof(GetShowInfo))]
+        [HttpGet("{ShowInfoId}", Name = nameof(GetShowInfo))]
 
         public IActionResult GetShowInfo(string ShowinfoId)
         {
@@ -42,22 +49,7 @@ namespace WebServer.Controllers
             return Ok(model);
         }
 
-        /*
-        [HttpGet("{limit}", Name = nameof(GetLimitedShowInfo))]
-
-        public IActionResult GetLimitedShowInfo(int limit)
-        {
-            var showInfos = _dataService.GetLimitedShowInfo(limit);
-
-            if (!showInfos.Any())
-            {
-                return NotFound();
-            }
-            return Ok(showInfos);
-        }
-        */
-
-        [HttpDelete("{ShowInfoId}")] 
+        [HttpDelete("{ShowInfoId}")]
         public IActionResult DeleteShowInfo(string Id)
         {
             var deleted = _dataService.DeleteShowInfo(Id);
@@ -70,20 +62,21 @@ namespace WebServer.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        public IActionResult CreateShowInfo(ShowInfoCreateModel model)
+        {
+            var showInfo = _mapper.Map<ShowInfo>(model);
+              
+            _dataService.CreateShowInfo(showInfo);
+
+            return CreatedAtRoute(null, CreateShowInfoModel(showInfo));
+        }
+
+
         private ShowInfoModel CreateShowInfoModel(ShowInfo showInfo)
         {
-            var model = new ShowInfoModel
-            {
-                Url = _generator.GetUriByName(HttpContext, nameof(GetShowInfo), new { showInfo.ShowInfoId}),
-                Type = showInfo.Type,
-                PrimaryTitle = showInfo.PrimaryTitle,
-                OriginalTitle = showInfo.OriginalTitle,
-                IsAdult = showInfo.IsAdult,
-                StartYear = showInfo.StartYear,
-                EndYear = showInfo.EndYear,
-                RunTime = showInfo.RunTime,
-                Poster = showInfo.Poster
-            };
+            var model = _mapper.Map< ShowInfoModel > (showInfo);
+            model.Url = _generator.GetUriByName(HttpContext, nameof(GetShowInfo), new { showInfo.ShowInfoId });
             return model;
         }
     }

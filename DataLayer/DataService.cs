@@ -175,6 +175,21 @@ public class DataService : IDataService
         return db.Users.ToList();
     }
 
+    public User? GetUser(string UserId)
+    {
+        using var db = new NorthwindContext();
+
+        return db.Users.Find(UserId);
+    }
+
+
+    public void CreateUser(User user)
+    {
+        using var db = new NorthwindContext();
+        db.Users.Add(user);
+        db.SaveChanges();
+    }
+
     public IList<Wi> GetWis()
     {
         using var db = new NorthwindContext();

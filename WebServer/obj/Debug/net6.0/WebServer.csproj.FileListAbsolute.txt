@@ -84,3 +84,5 @@
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/Debug/net6.0/WebServer.pdb
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/Debug/net6.0/WebServer.genruntimeconfig.cache
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/Debug/net6.0/ref/WebServer.dll
+/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/AutoMapper.dll
+/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

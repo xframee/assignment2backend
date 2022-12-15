@@ -27,6 +27,8 @@ namespace DataLayer
         IList<ShowRating> GetShowRatings();
         IList<UserBookmark> GetUserBookmarks();
         IList<UserRating> GetUserRatings();
+        IList<User> GetUsers();
+        User? GetUser(string UserId);
         IList<Writer> GetWriters();
     }
 }
