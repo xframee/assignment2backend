@@ -49,6 +49,8 @@
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/WebServer.runtimeconfig.json
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/WebServer.dll
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/WebServer.pdb
+/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/AutoMapper.dll
+/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
@@ -84,5 +86,3 @@
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/Debug/net6.0/WebServer.pdb
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/Debug/net6.0/WebServer.genruntimeconfig.cache
 /Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/obj/Debug/net6.0/ref/WebServer.dll
-/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/AutoMapper.dll
-/Users/alissahansen/Test/Portfolio2/assignment2backend/WebServer/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -9,6 +9,8 @@ using WebServer.Models;
 namespace WebServer.Controllers
 {
     [Route("api/users")]
+    [ApiController]
+
     public class UsersController : ControllerBase
     {
 
@@ -32,7 +34,8 @@ namespace WebServer.Controllers
             return Ok(users);
         }
 
-        [HttpGet("{userId", Name = nameof(GetUser))]
+        
+        [HttpGet("{userId}", Name = nameof(GetUser))]
 
         public IActionResult GetUser(string UserId)
         {
@@ -48,6 +51,7 @@ namespace WebServer.Controllers
             return Ok(model);
         }
 
+        /*
         [HttpDelete("{ShowInfoId}")]
         public IActionResult DeleteShowInfo(string Id)
         {
@@ -61,7 +65,7 @@ namespace WebServer.Controllers
             return Ok();
         }
 
-       /* [HttpPost]
+        [HttpPost]
         public IActionResult Crea(UserCreateModel model)
         {
             var user = _mapper.Map<User>(model);
@@ -80,4 +84,5 @@ namespace WebServer.Controllers
         }
     }
 }
+
 
