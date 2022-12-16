@@ -7,7 +7,6 @@ namespace WebServer.Models.Profiles
     {
         public UserProfile()
         {
-            CreateMap<User, UserListModel>();
             CreateMap<User, UserModel>();
         }
     }

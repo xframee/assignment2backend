@@ -26,7 +26,7 @@ namespace WebServer.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
+        [HttpGet(Name = nameof(GetUsers))]
         public IActionResult GetUsers()
         {
             var users = _dataService.GetUsers().Select(x => CreateUserModel(x));
@@ -46,7 +46,7 @@ namespace WebServer.Controllers
                 return NotFound();
             }
 
-            UserListModel model = CreateUserModel(user);
+            UserModel model = CreateUserModel(user);
 
             return Ok(model);
         }
@@ -76,9 +76,9 @@ namespace WebServer.Controllers
         } */
 
 
-        private UserListModel CreateUserModel(User user)
+        private UserModel CreateUserModel(User user)
         {
-            var model = _mapper.Map<UserListModel>(user);
+            var model = _mapper.Map<UserModel>(user);
             model.Url = _generator.GetUriByName(HttpContext, nameof(GetUser), new { user.Username });
             return model;
         }
