@@ -35,11 +35,11 @@ namespace WebServer.Controllers
         }
 
         
-        [HttpGet("{userId}", Name = nameof(GetUser))]
+        [HttpGet("{Username}", Name = nameof(GetUser))]
 
-        public IActionResult GetUser(string UserId)
+        public IActionResult GetUser(string Username)
         {
-            var user = _dataService.GetUser(UserId);
+            var user = _dataService.GetUser(Username);
 
             if (user == null)
             {
@@ -51,11 +51,11 @@ namespace WebServer.Controllers
             return Ok(model);
         }
 
-        /*
-        [HttpDelete("{ShowInfoId}")]
-        public IActionResult DeleteShowInfo(string Id)
+        
+        [HttpDelete("{Username}")]
+        public IActionResult DeleteUser(string Username)
         {
-            var deleted = _dataService.DeleteShowInfo(Id);
+            var deleted = _dataService.DeleteUser(Username);
 
             if (!deleted)
             {
@@ -63,17 +63,17 @@ namespace WebServer.Controllers
             }
 
             return Ok();
-        }
+        } 
 
         [HttpPost]
-        public IActionResult Crea(UserCreateModel model)
+        public IActionResult CreateUser(UserCreateModel model)
         {
             var user = _mapper.Map<User>(model);
 
-            _dataService.CreateShowInfo(user);
+            _dataService.CreateUser(user);
 
             return CreatedAtRoute(null, CreateUserModel(user));
-        } */
+        }
 
 
         private UserModel CreateUserModel(User user)

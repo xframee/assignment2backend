@@ -8,6 +8,7 @@ namespace WebServer.Models.Profiles
         public UserProfile()
         {
             CreateMap<User, UserModel>();
+            CreateMap<UserCreateModel, User>();
         }
     }
 }

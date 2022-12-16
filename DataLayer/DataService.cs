@@ -8,11 +8,14 @@ namespace DataLayer;
 public class DataService : IDataService
 {
 
-    public IList<ShowInfo> GetShowInfos()
+    public IList<ShowInfo> GetShowInfos(int page, int pageSize)
     {
         using var db = new NorthwindContext();
 
-        return db.ShowInfos.ToList();
+        return db.ShowInfos
+            .Skip(page * pageSize)
+            .Take(pageSize)
+            .ToList();
     }
 
     public ShowInfo? GetShowInfo(string showInfoId)
@@ -61,6 +64,23 @@ public class DataService : IDataService
         dbShowInfo.RunTime = showinfo.RunTime;
         db.SaveChanges();
         return true;
+    }
+
+    public IList<ShowInfoSearchModel> GetShowInfoByName(string search, int page, int pageSize)
+    {
+        using var db = new NorthwindContext();
+        return db.ShowInfos
+            .Where(x => x.PrimaryTitle.ToLower().Contains(search.ToLower()))
+            .Select(x => new ShowInfoSearchModel
+            {
+                Title = x.PrimaryTitle,
+                StartYear = x.StartYear,
+                Poster = x.Poster
+            })
+            .Skip(page * pageSize)
+            .Take(pageSize)
+            .ToList();
+         
     }
 
     public IList<Genre> GetGenres()
@@ -186,8 +206,17 @@ public class DataService : IDataService
     public void CreateUser(User user)
     {
         using var db = new NorthwindContext();
+        //user.Username = HashUsername(user.Usermame);
         db.Users.Add(user);
         db.SaveChanges();
+    }
+
+    public bool DeleteUser(string Username)
+    {
+        using var db = new NorthwindContext();
+        var user = db.Users.Find(Username);
+        db.Users.Remove(user);
+        return db.SaveChanges() > 0;
     }
 
     public IList<Wi> GetWis()

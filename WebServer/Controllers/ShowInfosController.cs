@@ -24,13 +24,28 @@ namespace WebServer.Controllers
             _generator = generator;
             _mapper = mapper;
         }
-
+        /*
         [HttpGet]
-        public IActionResult GetShowInfos()
+        public IActionResult GetShowInfos(int page = 0, int pageSize = 10)
         {
-            var showInfos = _dataService.GetShowInfos().Select(x => CreateShowInfoModel(x));
+            var showInfos = _dataService.GetShowInfos(page, pageSize).Select(x => CreateShowInfoModel(x));
 
             return Ok(showInfos);
+        }
+        */
+        
+        [HttpGet]
+        public IActionResult GetShowInfos(string? search = null, int page = 0, int pageSize = 10)
+        {
+
+            if (string.IsNullOrEmpty(search))
+            {
+                var showInfos = _dataService.GetShowInfos(page, pageSize).Select(x => CreateShowInfoModel(x));
+
+                return Ok(showInfos);
+            }
+            var data = _dataService.GetShowInfoByName(search, page, pageSize);
+            return Ok(data);
         }
 
         [HttpGet("{ShowInfoId}", Name = nameof(GetShowInfo))]
@@ -79,6 +94,7 @@ namespace WebServer.Controllers
             model.Url = _generator.GetUriByName(HttpContext, nameof(GetShowInfo), new { showInfo.ShowInfoId });
             return model;
         }
+
     }
 
 }
