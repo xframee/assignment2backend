@@ -10,6 +10,8 @@ builder.Services.AddSingleton<IDataService, DataService>();
 
 var app = builder.Build();
 
+app.UseCors(options => options.WithOrigins("*").AllowAnyMethod().AllowAnyHeader());
+
 app.MapControllers();
 
 app.Run();

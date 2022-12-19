@@ -13,7 +13,7 @@ namespace DataLayer.Model
         public string StartYear { get; set; }
         public string EndYear { get; set; }
         public int? RunTime { get; set; }
-        public string? Poster { get; set; }
+        public string Poster { get; set; }
 
     }
 

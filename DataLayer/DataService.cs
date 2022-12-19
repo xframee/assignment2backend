@@ -13,6 +13,9 @@ public class DataService : IDataService
         using var db = new NorthwindContext();
 
         return db.ShowInfos
+            .Where(x => x.Type.Equals("movie"))
+            .Where(x => x.Poster != "N/A")
+            .OrderByDescending (x=> x.StartYear)
             .Skip(page * pageSize)
             .Take(pageSize)
             .ToList();
