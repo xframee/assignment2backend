@@ -3,16 +3,23 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebServer/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataLayer/DataService.cs">
     <Files>
-      <File FileName="WebServer/Controllers/ShowInfosController.cs" Line="49" Column="10" />
-      <File FileName="DataLayer/DataService.cs" Line="37" Column="115" />
+      <File FileName="WebServer/Controllers/ShowInfosController.cs" Line="48" Column="29" />
+      <File FileName="WebServer/Controllers/UsersController.cs" Line="64" Column="1" />
+      <File FileName="DataLayer/DataService.cs" Line="17" Column="43" />
       <File FileName="DataLayer/NorthwindContext.cs" Line="53" Column="61" />
-      <File FileName="DataLayer/Model/ShowInfo.cs" Line="19" Column="1" />
-      <File FileName="WebServer/Models/ShowInfoModel.cs" Line="15" Column="6" />
-      <File FileName="WebServer/Program.cs" Line="7" Column="16" />
-      <File FileName="WebServer/Models/ShowInfCreateModel.cs" Line="17" Column="1" />
+      <File FileName="WebServer/Program.cs" Line="13" Column="84" />
+      <File FileName="DataLayer/IDataService.cs" Line="12" Column="48" />
+      <File FileName="WebServer/Models/UserModel.cs" Line="11" Column="1" />
+      <File FileName="WebServer/Models/UserCreateModel.cs" Line="8" Column="6" />
+      <File FileName="WebServer/Models/ShowInfoCreateModel.cs" Line="14" Column="6" />
+      <File FileName="DataLayer/ShowInfoSearchModel.cs" Line="9" Column="7" />
+      <File FileName="DataLayer/Model/ShowInfo.cs" Line="16" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,9 +31,9 @@
             <Node name="MyApp" expanded="True" />
             <Node name="WebServer" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Pages" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Profiles" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -36,7 +43,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
