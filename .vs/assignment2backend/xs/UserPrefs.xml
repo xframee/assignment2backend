@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{C3D53BBF-0B6D-4985-9969-7EAF8B1E8708}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataLayer/DataService.cs">
+  <MonoDevelop.Ide.ItemProperties.WebServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataLayer/NorthwindContext.cs">
     <Files>
       <File FileName="WebServer/Controllers/ShowInfosController.cs" Line="48" Column="29" />
       <File FileName="WebServer/Controllers/UsersController.cs" Line="64" Column="1" />
-      <File FileName="DataLayer/DataService.cs" Line="17" Column="43" />
+      <File FileName="DataLayer/DataService.cs" Line="21" Column="23" />
       <File FileName="DataLayer/NorthwindContext.cs" Line="53" Column="61" />
       <File FileName="WebServer/Program.cs" Line="13" Column="84" />
       <File FileName="DataLayer/IDataService.cs" Line="12" Column="48" />
@@ -27,6 +25,7 @@
           <Node name="assignment2backend" expanded="True">
             <Node name="DataLayer" expanded="True">
               <Node name="Model" expanded="True" />
+              <Node name="NorthwindContext.cs" selected="True" />
             </Node>
             <Node name="MyApp" expanded="True" />
             <Node name="WebServer" expanded="True">
@@ -43,4 +42,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

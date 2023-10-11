@@ -657,24 +657,25 @@
     ]
   },
   "packageFolders": {
-    "/Users/alissahansen/.nuget/packages/": {}
+    "/Users/alexanderchristensen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/DataLayer.csproj",
+      "projectUniqueName": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/DataLayer.csproj",
-      "packagesPath": "/Users/alissahansen/.nuget/packages/",
-      "outputPath": "/Users/alissahansen/Test/Portfolio2/assignment2backend/DataLayer/obj/",
+      "projectPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/DataLayer.csproj",
+      "packagesPath": "/Users/alexanderchristensen/.nuget/packages/",
+      "outputPath": "/Users/alexanderchristensen/Desktop/Projects/assignment2backend/DataLayer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/alissahansen/.nuget/NuGet/NuGet.Config"
+        "/Users/alexanderchristensen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
